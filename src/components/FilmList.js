@@ -1,18 +1,9 @@
 import React from 'react';
-import star from './../img/star.svg';
 import shortid from 'shortid';
+import Star from './Star';
 
 function FilmList(prop) {
   const { data } = prop;
-  console.log(data);
-
-  function Star() {
-    return (
-      <li className='star_item'>
-        <img src={star} alt='star'/>
-      </li>
-    );
-  }
 
   return (
     data.map((item) => {
